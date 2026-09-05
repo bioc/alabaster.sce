@@ -51,7 +51,7 @@ saveObject(sce, tmp)
 list.files(tmp, recursive=TRUE)
 ```
 
-We can then load it back into the session with `loadObject()`.
+We can then load it back into the session with `readObject()`.
 
 ```{r}
 roundtrip <- readObject(tmp)

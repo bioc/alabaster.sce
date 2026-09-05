@@ -4,7 +4,7 @@
 #' 
 #' @param x A \link[SingleCellExperiment]{SingleCellExperiment} object or one of its subclasses.
 #' @inheritParams alabaster.base::saveObject
-#' @param ... Further arguments to pass to the RangedSummarizedExperiment method for \code{\link[alabaster.base]{saveObject}}.
+#' @param ... Further arguments to pass to \code{"\link[alabaster.se]{saveObject,RangedSummarizedExperiment-method}"}.
 #'
 #' @author Aaron Lun
 #' 

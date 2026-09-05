@@ -13,7 +13,7 @@
 
 \item{path}{String containing the path to a directory in which to save \code{x}.}
 
-\item{...}{Further arguments to pass to the RangedSummarizedExperiment method for \code{\link[alabaster.base]{saveObject}}.}
+\item{...}{Further arguments to pass to \code{"\link[alabaster.se]{saveObject,RangedSummarizedExperiment-method}"}.}
 }
 \value{
 \code{x} is saved into \code{path} and \code{NULL} is invisibly returned.
