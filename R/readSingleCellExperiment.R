@@ -1,13 +1,13 @@
 #' Read a SingleCellExperiment from disk
 #'
-#' Read a \linkS4class{SingleCellExperiment} object from its on-disk representation.
-#' This is usually not directly called by users, but is instead called by dispatch in \code{\link{readObject}}.
+#' Read a \link[SingleCellExperiment]{SingleCellExperiment} object from its on-disk representation.
+#' This is usually not directly called by users, but is instead called by dispatch in \code{\link[alabaster.base]{readObject}}.
 #'
-#' @param path String containing a path to a directory, itself created using the \code{\link{saveObject}} method for \linkS4class{SingleCellExperiment} objects.
-#' @param metadata Named list of metadata for this object, see \code{\link{readObjectFile}} for details.
-#' @param ... Further arguments passed to \code{\link{readRangedSummarizedExperiment}} and internal \code{\link{altReadObject}} calls.
+#' @param path String containing a path to a directory, itself created using the \code{\link[alabaster.base]{saveObject}} method for \link[SingleCellExperiment]{SingleCellExperiment} objects.
+#' @param metadata Named list of metadata for this object, see \code{\link[alabaster.base]{readObjectFile}} for details.
+#' @param ... Further arguments passed to \code{\link[alabaster.se]{readRangedSummarizedExperiment}} and internal \code{\link[alabaster.base]{altReadObject}} calls.
 #' 
-#' @return A \linkS4class{SingleCellExperiment} object.
+#' @return A \link[SingleCellExperiment]{SingleCellExperiment} object.
 #'
 #' @author Aaron Lun
 #'
@@ -80,6 +80,7 @@ readSingleCellExperiment <- function(path, metadata, ...) {
 
 #' @export
 loadSingleCellExperiment <- function(exp.info, project, ...) {
+    .Deprecated(old = "loadSingleCellExperiment", new = "readSingleCellExperiment")
     se <- loadSummarizedExperiment(exp.info, project, ...)
     se <- as(se, "SingleCellExperiment")
 

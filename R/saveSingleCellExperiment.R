@@ -1,10 +1,10 @@
 #' Save a SingleCellExperiment to disk
 #'
-#' Save a \linkS4class{SingleCellExperiment} to its on-disk representation.
+#' Save a \link[SingleCellExperiment]{SingleCellExperiment} to its on-disk representation.
 #' 
-#' @param x A \linkS4class{SingleCellExperiment} object or one of its subclasses.
+#' @param x A \link[SingleCellExperiment]{SingleCellExperiment} object or one of its subclasses.
 #' @inheritParams alabaster.base::saveObject
-#' @param ... Further arguments to pass to the RangedSummarizedExperiment method.
+#' @param ... Further arguments to pass to the RangedSummarizedExperiment method for \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @author Aaron Lun
 #' 

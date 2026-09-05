@@ -9,17 +9,17 @@
 \S4method{saveObject}{SingleCellExperiment}(x, path, ...)
 }
 \arguments{
-\item{x}{A \linkS4class{SingleCellExperiment} object or one of its subclasses.}
+\item{x}{A \link[SingleCellExperiment]{SingleCellExperiment} object or one of its subclasses.}
 
 \item{path}{String containing the path to a directory in which to save \code{x}.}
 
-\item{...}{Further arguments to pass to the RangedSummarizedExperiment method.}
+\item{...}{Further arguments to pass to the RangedSummarizedExperiment method for \code{\link[alabaster.base]{saveObject}}.}
 }
 \value{
 \code{x} is saved into \code{path} and \code{NULL} is invisibly returned.
 }
 \description{
-Save a \linkS4class{SingleCellExperiment} to its on-disk representation.
+Save a \link[SingleCellExperiment]{SingleCellExperiment} to its on-disk representation.
 }
 \examples{
 # Mocking up an SCE:

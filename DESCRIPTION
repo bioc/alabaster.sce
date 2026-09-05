@@ -1,7 +1,7 @@
 Package: alabaster.sce
 Title: Load and Save SingleCellExperiment from File
-Version: 1.13.0
-Date: 2024-10-16
+Version: 1.13.1
+Date: 2026-09-05
 Authors@R: person("Aaron", "Lun", role=c("aut", "cre"), email="infinite.monkeys.with.keyboards@gmail.com")
 License: MIT + file LICENSE
 Description: 
@@ -22,7 +22,8 @@ Suggests:
     BiocStyle,
     rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 7.2.3
 biocViews:
     DataImport,
     DataRepresentation
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.0
